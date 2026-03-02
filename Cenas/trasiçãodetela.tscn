@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://78cxf2mmco8m"]
 
 [ext_resource type="Script" uid="uid://vrojty6qjhno" path="res://Scripts/trasiçãodetela.gd" id="1_8gm2b"]
+[ext_resource type="AudioStream" uid="uid://da8xtqo38vbv5" path="res://Imagens/door.ogg" id="2_0evxk"]
 
 [sub_resource type="Animation" id="Animation_0evxk"]
 resource_name = "FadeIn"
@@ -69,3 +70,7 @@ color = Color(0, 0, 0, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=948844705]
 libraries/ = SubResource("AnimationLibrary_qb5hl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1847011027]
+stream = ExtResource("2_0evxk")
+volume_db = 1.01
