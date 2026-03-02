@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://ddku65r8a7oyy"]
+
+[ext_resource type="Script" uid="uid://pwx50shg00bb" path="res://Scripts/player.gd" id="1_pmvhq"]
+[ext_resource type="Texture2D" uid="uid://ciugdxmasqpwq" path="res://Sprites/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Character/Idle/Idle-Sheet.png" id="2_iersn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
+atlas = ExtResource("2_iersn")
+region = Rect2(0, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
+atlas = ExtResource("2_iersn")
+region = Rect2(128, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
+atlas = ExtResource("2_iersn")
+region = Rect2(64, 0, 64, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("2_iersn")
+region = Rect2(192, 0, 64, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kdubu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0e48y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epypp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hol4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d21ai"]
+height = 52.0
+
+[node name="Player" type="CharacterBody2D" unique_id=979750258]
+script = ExtResource("1_pmvhq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=618845452]
+position = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_kdubu")
+animation = &"idle"
+autoplay = "idle"
+frame = 1
+frame_progress = 0.4376096
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2041895211]
+position = Vector2(2, 3)
+shape = SubResource("CapsuleShape2D_d21ai")

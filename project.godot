@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ProgetoTesteTopDown"
-run/main_scene="uid://btib1a5bnnb31"
+run/main_scene="uid://dwb4fdgkdl23c"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://Cenas/icon.svg"
 

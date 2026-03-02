@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dwb4fdgkdl23c"]
+
+[ext_resource type="Texture2D" uid="uid://dkcpkkjx0jkw5" path="res://Sprites/Legacy-Fantasy - High Forest 2.0/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="1_j5dva"]
+[ext_resource type="PackedScene" uid="uid://ddku65r8a7oyy" path="res://Cenas/player.tscn" id="2_j5dva"]
+
+[node name="Mundo" type="Node2D" unique_id=891722281]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1667154859]
+position = Vector2(575.5, 325)
+scale = Vector2(2.3854167, 2.4044118)
+texture = ExtResource("1_j5dva")
+
+[node name="Player" parent="." unique_id=979750258 instance=ExtResource("2_j5dva")]
+position = Vector2(108, 509)
