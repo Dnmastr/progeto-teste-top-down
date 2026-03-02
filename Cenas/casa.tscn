@@ -1,21 +1,83 @@
 [gd_scene format=3 uid="uid://clx2nv5k4yemu"]
 
-[ext_resource type="Texture2D" uid="uid://ddfpex4x3llut" path="res://Cenas/icon.svg" id="1_bn8wn"]
+[ext_resource type="Texture2D" uid="uid://cx0honsxp44dc" path="res://Imagens/a720e17a456c7f34a0ce7f2ee9c23341.png" id="1_pcnot"]
 [ext_resource type="PackedScene" uid="uid://ddku65r8a7oyy" path="res://Cenas/player.tscn" id="2_vadl2"]
 [ext_resource type="PackedScene" uid="uid://rldp816pnm2i" path="res://Cenas/entrada.tscn" id="3_pcnot"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pcnot"]
+size = Vector2(360.5, 69.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nribw"]
+size = Vector2(22, 170)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_08hkd"]
+size = Vector2(29.5, 177)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vf0xb"]
+size = Vector2(283, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gumeh"]
+size = Vector2(34.5, 5.5810547)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5b23"]
+size = Vector2(33.62683, 20)
 
 [node name="casa" type="Node2D" unique_id=756372474]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=851768692]
 z_index = 1
-position = Vector2(576.75, 324.75)
-scale = Vector2(8.957031, 5.0664063)
-texture = ExtResource("1_bn8wn")
+position = Vector2(541, 320)
+scale = Vector2(0.62538236, 0.58857405)
+texture = ExtResource("1_pcnot")
 
 [node name="Player" parent="Sprite2D" unique_id=979750258 instance=ExtResource("2_vadl2")]
 texture_filter = 1
-scale = Vector2(0.4, 0.4)
+position = Vector2(-2.1219254e-05, 142.7178)
+scale = Vector2(2.5, 2.5)
 
 [node name="Entrada" parent="." unique_id=1197309881 instance=ExtResource("3_pcnot")]
-position = Vector2(391, 334)
+position = Vector2(543.00006, 462)
+rotation = 1.5707964
+scale = Vector2(1.5, 1.5)
 proxarea = "res://Cenas/mundo.tscn"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=296594745]
+anchor_mode = 0
+
+[node name="ParedeCima" type="StaticBody2D" parent="." unique_id=1737572609]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeCima" unique_id=375600075]
+z_index = 1
+position = Vector2(542.25, 201.25)
+shape = SubResource("RectangleShape2D_pcnot")
+
+[node name="ParedeDireita" type="StaticBody2D" parent="." unique_id=653095318]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeDireita" unique_id=1147579053]
+position = Vector2(372, 367)
+shape = SubResource("RectangleShape2D_nribw")
+
+[node name="ParedeEsquerda" type="StaticBody2D" parent="." unique_id=1942265021]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeEsquerda" unique_id=1282383386]
+position = Vector2(715.75, 363.5)
+shape = SubResource("RectangleShape2D_08hkd")
+
+[node name="ParedeBaixo" type="StaticBody2D" parent="." unique_id=1271037256]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeBaixo" unique_id=621127911]
+z_index = 1
+position = Vector2(537.5, 462.5)
+shape = SubResource("RectangleShape2D_vf0xb")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ParedeBaixo" unique_id=617718109]
+position = Vector2(387.18134, 455.33066)
+rotation = 0.37350047
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_gumeh")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="ParedeBaixo" unique_id=627269187]
+position = Vector2(697.99994, 458.99997)
+rotation = -0.49741885
+scale = Vector2(1.03, 1.03)
+shape = SubResource("RectangleShape2D_g5b23")
