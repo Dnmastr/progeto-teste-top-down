@@ -2,6 +2,6 @@ extends Area2D
 
 @export var proxarea = ""
 
-func _on_body_entered(body):
+func _on_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
-		get_tree().change_scene_to_file(proxarea)
+		Trasiçãodetela.change_scene_with_fade(proxarea)
