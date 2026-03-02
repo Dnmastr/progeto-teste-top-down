@@ -15,9 +15,14 @@ run/main_scene="uid://dwb4fdgkdl23c"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://Cenas/icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://dhs2ltnnet60p"
+
 [autoload]
 
 "Trasiçãodetela"="*uid://78cxf2mmco8m"
+somambiente="*uid://bwd7xhcedodde"
 
 [global_group]
 

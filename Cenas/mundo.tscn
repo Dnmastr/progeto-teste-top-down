@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dwb4fdgkdl23c"]
 
+[ext_resource type="Script" uid="uid://4pyaqgluumpi" path="res://Scripts/mundo.gd" id="1_1ag4k"]
 [ext_resource type="PackedScene" uid="uid://ddku65r8a7oyy" path="res://Cenas/player.tscn" id="2_j5dva"]
 [ext_resource type="PackedScene" uid="uid://rldp816pnm2i" path="res://Cenas/entrada.tscn" id="4_qboq2"]
 [ext_resource type="Texture2D" uid="uid://b3on0nesj1n36" path="res://Imagens/chao.png" id="4_qvmr6"]
@@ -194,12 +195,13 @@ sources/0 = SubResource("TileSetAtlasSource_j4kvc")
 size = Vector2(127.5, 31)
 
 [node name="Mundo" type="Node2D" unique_id=891722281]
+script = ExtResource("1_1ag4k")
 metadata/_edit_horizontal_guides_ = [1.0]
 
 [node name="Player" parent="." unique_id=979750258 instance=ExtResource("2_j5dva")]
 z_index = 1
 texture_filter = 1
-position = Vector2(400, 340)
+position = Vector2(401, 340)
 
 [node name="Entrada" parent="." unique_id=1197309881 instance=ExtResource("4_qboq2")]
 z_index = 1

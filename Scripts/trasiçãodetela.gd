@@ -1,8 +1,12 @@
 extends CanvasLayer
 
+@onready var audio = $AudioStreamPlayer
 @onready var anim = $AnimationPlayer
 
 func change_scene_with_fade(scene_path: String) -> void:
+	
+	audio.play()
+	
 	anim.play("FadeOut")
 	await anim.animation_finished
 	

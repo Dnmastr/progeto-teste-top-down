@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bwd7xhcedodde"]
+
+[ext_resource type="AudioStream" uid="uid://og7wil7hgv38" path="res://Imagens/ambiente1.ogg" id="1_h6hsv"]
+[ext_resource type="Script" uid="uid://bhsm5wb8fl0y3" path="res://Scripts/somambiente.gd" id="1_yoiqi"]
+
+[node name="SomAmbiente" type="Node" unique_id=1117242730]
+script = ExtResource("1_yoiqi")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1042858265]
+stream = ExtResource("1_h6hsv")
+autoplay = true
+bus = &"Ambiente"
