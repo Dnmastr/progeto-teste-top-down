@@ -42,6 +42,9 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d21ai"]
 height = 52.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(426, 20)
+
 [node name="Node2D" type="Node2D" unique_id=1086006206]
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=479150156]
@@ -58,3 +61,11 @@ frame_progress = 0.4376096
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=581953059]
 position = Vector2(2, 3)
 shape = SubResource("CapsuleShape2D_d21ai")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=407893500]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2069446785]
+position = Vector2(61, 46)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2040381683]
