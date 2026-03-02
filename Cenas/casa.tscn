@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://clx2nv5k4yemu"]
+
+[ext_resource type="Texture2D" uid="uid://ddfpex4x3llut" path="res://Cenas/icon.svg" id="1_bn8wn"]
+[ext_resource type="PackedScene" uid="uid://ddku65r8a7oyy" path="res://Cenas/player.tscn" id="2_vadl2"]
+[ext_resource type="PackedScene" uid="uid://rldp816pnm2i" path="res://Cenas/entrada.tscn" id="3_pcnot"]
+
+[node name="casa" type="Node2D" unique_id=756372474]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=851768692]
+z_index = 1
+position = Vector2(576.75, 324.75)
+scale = Vector2(8.957031, 5.0664063)
+texture = ExtResource("1_bn8wn")
+
+[node name="Player" parent="Sprite2D" unique_id=979750258 instance=ExtResource("2_vadl2")]
+texture_filter = 1
+scale = Vector2(0.4, 0.4)
+
+[node name="Entrada" parent="." unique_id=1197309881 instance=ExtResource("3_pcnot")]
+position = Vector2(391, 334)
+proxarea = "res://Cenas/mundo.tscn"

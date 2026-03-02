@@ -21,5 +21,4 @@ scale = Vector2(0.2429312, 0.5390625)
 texture = ExtResource("3_8gp82")
 
 [node name="Entrada" parent="." unique_id=1197309881 instance=ExtResource("4_qboq2")]
-position = Vector2(519, 348)
-proxarea = "res://Cenas/casa.tscn"
+position = Vector2(520, 304)
