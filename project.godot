@@ -22,8 +22,6 @@ buses/default_bus_layout="uid://dhs2ltnnet60p"
 
 "Trasiçãodetela"="*uid://78cxf2mmco8m"
 somambiente="*uid://bwd7xhcedodde"
-Inventory="*uid://q3fw3cyt5pmg"
-InventoryUi="*uid://dkgdmvraj52n7"
 
 [global_group]
 
