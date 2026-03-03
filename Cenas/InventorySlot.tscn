@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b8ft4ysros3mo"]
+
+[ext_resource type="Script" uid="uid://xkqv60jfw50h" path="res://Scripts/inventoryslot.gd" id="1_cnibx"]
+
+[node name="TextureButton" type="TextureButton" unique_id=1458962720]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cnibx")
