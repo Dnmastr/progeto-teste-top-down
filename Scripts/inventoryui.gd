@@ -7,7 +7,7 @@ func _ready():
 	criar_slots()
 	atualizar()
 	Inventory.inventory_updated.connect(atualizar)
-	
+	print("Slots criados:", grid.get_child_count())
 	
 func criar_slots():
 	for i in range(Inventory.TAMANHO_MAX):
