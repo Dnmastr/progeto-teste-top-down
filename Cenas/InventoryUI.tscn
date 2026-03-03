@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dkgdmvraj52n7"]
+
+[ext_resource type="Script" uid="uid://dpifhv4o35uo5" path="res://Scripts/inventoryui.gd" id="1_mg83d"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1468045639]
+script = ExtResource("1_mg83d")
+
+[node name="Panel" type="Panel" parent="." unique_id=1525078731]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -58.0
+offset_right = 20.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="GridContainer" type="GridContainer" parent="Panel" unique_id=632766191]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+columns = 10
