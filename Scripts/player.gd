@@ -24,3 +24,8 @@ func _physics_process(delta):
 		animated_sprite.play("idle") # Animação parado
 
 	move_and_slide()
+
+func _input(event):
+	if event.is_action_pressed("ui_accept"): # Enter
+		var item = preload("res://Resources/semente_trigo.tres")
+		Inventory.adicionar_item(item)
