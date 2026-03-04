@@ -561,13 +561,7 @@ texture = ExtResource("6_1ag4k")
 sources/0 = SubResource("TileSetAtlasSource_j4kvc")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qvmr6"]
-size = Vector2(127.5, 23.5)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4kvc"]
-size = Vector2(49, 25)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjsl6"]
-size = Vector2(50, 26)
+size = Vector2(127.5, 31)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yn71n"]
 texture = ExtResource("7_1ag4k")
@@ -667,7 +661,6 @@ texture_filter = 1
 position = Vector2(401, 340)
 
 [node name="Camera2" type="Camera2D" parent="Player" unique_id=297693949 node_paths=PackedStringArray("tilemap_layer")]
-position = Vector2(2, -49)
 zoom = Vector2(2, 2)
 limit_left = -9999968
 limit_smoothed = true
@@ -678,9 +671,9 @@ tilemap_layer = NodePath("../../Limite")
 
 [node name="Entrada" parent="." unique_id=1197309881 instance=ExtResource("4_qboq2")]
 z_index = 1
-position = Vector2(402.01907, 302.00003)
-rotation = 3.1411767
-scale = Vector2(1.4055235, 0.51139516)
+position = Vector2(402.00003, 299)
+rotation = 1.5707964
+scale = Vector2(0.4, 0.4)
 skew = 1.569051
 priority = 1
 proxarea = "res://Cenas/casa.tscn"
@@ -726,16 +719,8 @@ tile_set = SubResource("TileSet_bjsl6")
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1522360278]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=879551358]
-position = Vector2(403, 287)
+position = Vector2(402, 292)
 shape = SubResource("RectangleShape2D_qvmr6")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1918658347]
-position = Vector2(362.5, 294.5)
-shape = SubResource("RectangleShape2D_j4kvc")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=2131851023]
-position = Vector2(441, 295)
-shape = SubResource("RectangleShape2D_bjsl6")
 
 [node name="Sombra" type="TileMapLayer" parent="." unique_id=1139625206]
 z_index = -2

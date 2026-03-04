@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bmaub7yh5ynub"]
+
+[ext_resource type="Script" uid="uid://cbvvclo5xyl0u" path="res://Resources/item.gd" id="1_f7oql"]
+[ext_resource type="Texture2D" uid="uid://bpnfi2i32oo2q" path="res://Imagens/batata.png" id="1_lj47y"]
+
+[resource]
+script = ExtResource("1_f7oql")
+title = "Potato"
+icon = ExtResource("1_lj47y")
+metadata/_custom_type_script = "uid://cbvvclo5xyl0u"
