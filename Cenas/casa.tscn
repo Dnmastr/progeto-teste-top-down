@@ -1734,7 +1734,30 @@ sources/0 = SubResource("TileSetAtlasSource_bn8wn")
 size = Vector2(229, 18)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nribw"]
-size = Vector2(228, 17.5)
+size = Vector2(230, 17.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eucpq"]
+size = Vector2(5.324623, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbih7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_08hkd"]
+size = Vector2(46.502747, 27.88733)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vf0xb"]
+size = Vector2(75.98862, 13.785767)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gumeh"]
+size = Vector2(49.98494, 778.00433)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_636cy"]
+size = Vector2(6, 168)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t4xx3"]
+size = Vector2(507.05862, 16.141705)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5b23"]
+size = Vector2(29.289307, 477)
 
 [node name="Casa" type="Node2D" unique_id=1763723534]
 
@@ -1746,7 +1769,7 @@ tile_set = SubResource("TileSet_vadl2")
 
 [node name="Player" parent="." unique_id=979750258 instance=ExtResource("2_vadl2")]
 texture_filter = 1
-position = Vector2(584.99994, 482)
+position = Vector2(585, 482)
 scale = Vector2(2.8942442, 3.1798425)
 
 [node name="Entrada" parent="." unique_id=1197309881 instance=ExtResource("3_pcnot")]
@@ -1762,5 +1785,54 @@ position = Vector2(435.5, 613)
 shape = SubResource("RectangleShape2D_pcnot")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=119108802]
-position = Vector2(736, 612.75)
+position = Vector2(737, 612.75)
 shape = SubResource("RectangleShape2D_nribw")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1882531830]
+position = Vector2(629.5, 595.5)
+scale = Vector2(3.1927195, 0.85637885)
+shape = SubResource("RectangleShape2D_eucpq")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=995307496]
+position = Vector2(542.5, 595.63635)
+scale = Vector2(0.8395183, 0.86259645)
+shape = SubResource("RectangleShape2D_bbih7")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=819889123]
+position = Vector2(303.48517, 602.52374)
+rotation = 0.5608291
+scale = Vector2(1.1053936, 0.5714286)
+shape = SubResource("RectangleShape2D_08hkd")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D" unique_id=1387327354]
+position = Vector2(869.04974, 602.18225)
+rotation = -0.5661032
+scale = Vector2(0.75212336, 1.1742378)
+skew = -0.31746912
+shape = SubResource("RectangleShape2D_vf0xb")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D" unique_id=1819190659]
+position = Vector2(269.99127, 320.49927)
+rotation = -2.81141
+scale = Vector2(0.7695959, 0.70761764)
+skew = -0.32950556
+shape = SubResource("RectangleShape2D_gumeh")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D" unique_id=1637403663]
+position = Vector2(372, 160)
+shape = SubResource("RectangleShape2D_636cy")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D" unique_id=943077252]
+position = Vector2(633, 106.99999)
+scale = Vector2(1.0070809, 3.9745712)
+shape = SubResource("RectangleShape2D_t4xx3")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D" unique_id=2129324684]
+position = Vector2(899.64465, 353.5)
+shape = SubResource("RectangleShape2D_g5b23")
+
+[node name="Entrada2" parent="." unique_id=5120346 instance=ExtResource("3_pcnot")]
+position = Vector2(331, 84.00001)
+rotation = 1.5685943
+scale = Vector2(0.8661759, 1.6069521)
+proxarea = "res://Cenas/primeiroandardacasa1.tscn"
